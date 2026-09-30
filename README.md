@@ -1,5 +1,3 @@
-# README.md
-
 # LLM-Inliner: A Large Language Model Guided Function Inlining Framework
 
 This repository contains the implementation and experimental artifacts for our paper **LLM-Inliner: A Large Language Model Guided Function Inlining Framework**.
