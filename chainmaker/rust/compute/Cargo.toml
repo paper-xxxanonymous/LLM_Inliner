@@ -1,0 +1,17 @@
+[package]
+name = "compute"
+version = "0.1.0"
+authors = ["chainmaker"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+contract_sdk_rust = { git = "https://git.chainmaker.org.cn/ChainMaker/contract-sdk-rust.git", branch="master" }
+sha2 = "0.10"              # 用于 SHA-256 哈希计算
+num-bigint = "0.4"         # 用于大数运算
+num-traits = "0.2"
+[profile.release]
+# Tell `rustc` to optimize for small code size.
+opt-level = 3
